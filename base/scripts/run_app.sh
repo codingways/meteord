@@ -41,4 +41,4 @@ fi
 export PORT=${PORT:-80}
 
 echo "=> Starting meteor app on port:$PORT"
-node main.js
+node main.js --max_old_space_size=380 --gc_interval=100
